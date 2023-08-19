@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Prajna S G">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Weather App</title>
+    <script src="https://kit.fontawesome.com/74422a36ef.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="main.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <main>
+<div class="weather-side">
+      
+    <section class="location">
+        <div class=part1>
+        <div class="day" id="day"><h3> Tuesday</h3></div>
+        <div class="date" id="date">15 Jan 2019</div>
+        <span>
+        <i class="fa fa-solid fa-location-dot fa-6x"></i></span>
+        <p class="city" id="name">PARIS, FR</p>
+        
+        </div>
+
+        <div class="part2">
+            <!-- <i class="fa-solid fa-sun-bright"></i> -->
+
+            <!-- SUN ICON DOESNOT GET UPDATED -->
+            
+            <!-- <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon"> -->
+            <div class="imgtoday"><i class="fa fa-solid fa-sun fa-8x"></i><br></div>
+            <div class="temp" >29<span>&degC</span></div>
+            <div class="weather" id="weather-bhalue" style="text-transform:capitalize;">Sunny</div>   
+        </div>
+        
+    </section>
+
+</div>
+<div class="info">
+    <div class="infoside ">
+
+
+        <div class="input">
+            <input type="text" placeholder="Enter the city" class="input_text">
+            <input type="submit" value="Submit" class="submit" onclick="myFunction()">
+          </div>
+
+<center>
+    <div class="precipitation ">
+        <span class="title">PRECIPITATION  </span>
+        <span class="bhalue" id="precbhalue"> 0 % </span> 
+    </div><br>
+    <div class="humidity">
+        <span class="title">HUMIDITY</span>
+        <span class="bhalue" id="humiditybhalue"> 34 %</span> 
+    </div><br>
+    <div class="wind">
+        <span class="title">WIND</span>
+        <span class="bhalue" id="windbhalue"> 0 km/h</span> 
+    </div>
+    </div>
+</center>
+    <div class="week" id="weatherforecast">
+            
+        <ul>
+            <li class="weathitem"  id="currentlist">
+                <!-- <i class="fa fa-solid fa-cloud fa-2x">  
+                </i> -->
+                <i class="fa fa-solid fa-sun fa-2x"></i><br>
+                <span class="dayname"> Tue</span>
+                <span class="daytemp"> 29<span>&degC</span></span>
+            </li>
+            <li class="weathitem" >
+                <i class="fa fa-solid fa-cloud-rain fa-2x"></i>
+                <span class="dayname"> Wed</span>
+                <span class="daytemp"> 21<span>&degC</span></span>
+            </li>
+            <li class="weathitem">
+                <i class="fa fa-solid fa-cloud-sun fa-2x"></i>
+                <span class="dayname"> Thu</span>
+                <span class="daytemp"> 08<span>&degC</span></span>
+            </li>
+            <li class="weathitem">
+                <i class="fa fa-solid fa-cloud-showers-heavy fa-2x"></i>
+                <span class="dayname"> Fri</span>
+                <span class="daytemp"> 19<span>&degC</span></span>
+            </li>
+            <li class="weathitem">
+                <!-- <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon"> -->
+                <i class="fa fa-solid fa-cloud-showers-heavy fa-2x"></i>
+                <span class="dayname"> Sat</span>
+                <span class="daytemp"> 32<span>&degC</span></span>
+            </li>
+        </ul>
+    </div>
+</div> 
+        <div class="location-container">
+            <button class="location-button">
+                <i class="fa fa-solid fa-location-dot"></i>
+                <span>CHANGE LOCATION</span>
+                </button>
+        </div>
+    
+</div>
+
+</main>
+    
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+    
+    <script src="main3.js"></script>
+</body>
+</html>
